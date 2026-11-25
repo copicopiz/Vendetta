@@ -1,0 +1,9654 @@
+{
+ "note": "BCPack tables; see formats/06a-bcpack-tables.md. Values from published third-party work, see THIRD-PARTY-NOTICES.md. Not game data.",
+ "rans_models": {
+  "description": "Static rANS models. eab = alphabet index (alphabet of eab+1 bits), q = model number. Segment 0 is symbol 0; segment k>=1 is symbols [2^(k-1), 2^k). For symbol s in a segment: freq = freq, cum = base + freq*(s - first_symbol), modulo 65536. Reserved zero: if cum == 0 use (freq - 1, cum 1). Probability scale 65536.",
+  "self_check": "For every model the symbols tile cumulative values 1..65535 without gaps or overlap (each symbol starts where the previous one ends, the last ends at 65536), every frequency is at least 1, and the frequencies sum to 65535 because cumulative value 0 is reserved. Checked for all 144 models when this file was written: 0 failures.",
+  "models": [
+   {
+    "eab": 0,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 32768
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 32768,
+      "freq": 32768
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 38761
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 38761,
+      "freq": 26775
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 44484
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 44484,
+      "freq": 21052
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 49818
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 49818,
+      "freq": 15718
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 54623
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 54623,
+      "freq": 10913
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 58721
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 58721,
+      "freq": 6815
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 61911
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 61911,
+      "freq": 3625
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 64036
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 64036,
+      "freq": 1500
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65121
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65121,
+      "freq": 415
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65477
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65477,
+      "freq": 59
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65534
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65534,
+      "freq": 2
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65535
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65535,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65535
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65535,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65535
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65535,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65535
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65535,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 0,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65535
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65535,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 16384
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 16384,
+      "freq": 16384
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 32768,
+      "freq": 16384
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 21168
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 21168,
+      "freq": 17592
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 38760,
+      "freq": 13388
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 26354
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 26354,
+      "freq": 18130
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 44484,
+      "freq": 10526
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 31900
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 31900,
+      "freq": 17918
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 49818,
+      "freq": 7859
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 37750
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 37750,
+      "freq": 16874
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 54624,
+      "freq": 5456
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 43800
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 43800,
+      "freq": 14920
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 58720,
+      "freq": 3408
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 49850
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 49850,
+      "freq": 12062
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 61912,
+      "freq": 1812
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 55537
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 55537,
+      "freq": 8499
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 64036,
+      "freq": 750
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 60308
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 60308,
+      "freq": 4812
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65120,
+      "freq": 208
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 63575
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 63575,
+      "freq": 1901
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65476,
+      "freq": 30
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65132
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65132,
+      "freq": 402
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65534,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65511
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65511,
+      "freq": 23
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65534,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65533
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65533,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65534,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65533
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65533,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65534,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65533
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65533,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65534,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 1,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65533
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65533,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65534,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 8192
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 8192,
+      "freq": 8192
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 16384,
+      "freq": 8192
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 32768,
+      "freq": 8192
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 11073
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 11073,
+      "freq": 10095
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 21168,
+      "freq": 8796
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 38760,
+      "freq": 6694
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 14406
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 14406,
+      "freq": 11948
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 26354,
+      "freq": 9065
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 44484,
+      "freq": 5263
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 18234
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 18234,
+      "freq": 13666
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 31900,
+      "freq": 8958
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 49816,
+      "freq": 3930
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 22624
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 22624,
+      "freq": 15126
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 37750,
+      "freq": 8437
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 54624,
+      "freq": 2728
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 27657
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 27657,
+      "freq": 16143
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 43800,
+      "freq": 7460
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 58720,
+      "freq": 1704
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 33414
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 33414,
+      "freq": 16436
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 49850,
+      "freq": 6031
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 61912,
+      "freq": 906
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 39920
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 39920,
+      "freq": 15616
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 55536,
+      "freq": 4250
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 64036,
+      "freq": 375
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 47024
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 47024,
+      "freq": 13284
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 60308,
+      "freq": 2406
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65120,
+      "freq": 104
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 54201
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 54201,
+      "freq": 9375
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 63576,
+      "freq": 950
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65476,
+      "freq": 15
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 60388
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 60388,
+      "freq": 4744
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65132,
+      "freq": 200
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65532,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 64250
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 64250,
+      "freq": 1262
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65512,
+      "freq": 10
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65532,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65456
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65456,
+      "freq": 74
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65530,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65532,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65529
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65529,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65530,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65532,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65529
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65529,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65530,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65532,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 2,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65529
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65529,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65530,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65532,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 4096
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 4096,
+      "freq": 4096
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 8192,
+      "freq": 4096
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 16384,
+      "freq": 4096
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 32768,
+      "freq": 4096
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 5665
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 5665,
+      "freq": 5407
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 11072,
+      "freq": 5048
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 21168,
+      "freq": 4398
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 38760,
+      "freq": 3347
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 7539
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 7539,
+      "freq": 6867
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 14406,
+      "freq": 5973
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 26352,
+      "freq": 4532
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 44480,
+      "freq": 2632
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 9773
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 9773,
+      "freq": 8461
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 18234,
+      "freq": 6833
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 31900,
+      "freq": 4479
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 49816,
+      "freq": 1965
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 12447
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 12447,
+      "freq": 10177
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 22624,
+      "freq": 7564
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 37752,
+      "freq": 4218
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 54624,
+      "freq": 1364
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 15679
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 15679,
+      "freq": 11977
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 27656,
+      "freq": 8072
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 43800,
+      "freq": 3730
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 58720,
+      "freq": 852
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 19640
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 19640,
+      "freq": 13774
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 33414,
+      "freq": 8217
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 49848,
+      "freq": 3016
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 61912,
+      "freq": 453
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 24559
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 24559,
+      "freq": 15361
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 39920,
+      "freq": 7808
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 55536,
+      "freq": 2124
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 64032,
+      "freq": 188
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 30704
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 30704,
+      "freq": 16320
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 47024,
+      "freq": 6642
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 60308,
+      "freq": 1203
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65120,
+      "freq": 52
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 38280
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 38280,
+      "freq": 15920
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 54200,
+      "freq": 4688
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 63576,
+      "freq": 476
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65480,
+      "freq": 7
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 47169
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 47169,
+      "freq": 13219
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 60388,
+      "freq": 2372
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65132,
+      "freq": 99
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65528,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 56354
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 56354,
+      "freq": 7896
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 64250,
+      "freq": 631
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65512,
+      "freq": 4
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65528,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 63248
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 63248,
+      "freq": 2208
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65456,
+      "freq": 34
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65524,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65528,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65465
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65465,
+      "freq": 57
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65522,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65524,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65528,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65521
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65521,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65522,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65524,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65528,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 3,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65521
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65521,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65522,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65524,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65528,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 2048
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 2048,
+      "freq": 2048
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 4096,
+      "freq": 2048
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 8192,
+      "freq": 2048
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 16384,
+      "freq": 2048
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 32768,
+      "freq": 2048
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 2865
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 2865,
+      "freq": 2799
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 5664,
+      "freq": 2704
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 11072,
+      "freq": 2524
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 21168,
+      "freq": 2200
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 38768,
+      "freq": 1673
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 3858
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 3858,
+      "freq": 3682
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 7540,
+      "freq": 3434
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 14408,
+      "freq": 2986
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 26352,
+      "freq": 2266
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 44480,
+      "freq": 1316
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 5063
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 5063,
+      "freq": 4709
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 9772,
+      "freq": 4230
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 18232,
+      "freq": 3418
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 31904,
+      "freq": 2240
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 49824,
+      "freq": 982
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 6536
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 6536,
+      "freq": 5912
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 12448,
+      "freq": 5088
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 22624,
+      "freq": 3782
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 37752,
+      "freq": 2109
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 54624,
+      "freq": 682
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 8366
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 8366,
+      "freq": 7314
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 15680,
+      "freq": 5988
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 27656,
+      "freq": 4036
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 43800,
+      "freq": 1865
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 58720,
+      "freq": 426
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 10688
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 10688,
+      "freq": 8952
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 19640,
+      "freq": 6888
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 33416,
+      "freq": 4108
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 49848,
+      "freq": 1507
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 61904,
+      "freq": 227
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 13713
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 13713,
+      "freq": 10847
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 24560,
+      "freq": 7680
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 39920,
+      "freq": 3904
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 55536,
+      "freq": 1062
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 64032,
+      "freq": 94
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 17758
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 17758,
+      "freq": 12946
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 30704,
+      "freq": 8160
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 47024,
+      "freq": 3320
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 60304,
+      "freq": 602
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65120,
+      "freq": 26
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 23272
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 23272,
+      "freq": 15008
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 38280,
+      "freq": 7960
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 54200,
+      "freq": 2344
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 63576,
+      "freq": 237
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65472,
+      "freq": 4
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 30841
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 30841,
+      "freq": 16327
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 47168,
+      "freq": 6610
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 60388,
+      "freq": 1187
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65136,
+      "freq": 48
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65520,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 41006
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 41006,
+      "freq": 15348
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 56354,
+      "freq": 3947
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 64248,
+      "freq": 316
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65512,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65520,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 53291
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 53291,
+      "freq": 9957
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 63248,
+      "freq": 1104
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65456,
+      "freq": 14
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65512,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65520,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 63380
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 63380,
+      "freq": 2084
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65464,
+      "freq": 22
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65508,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65512,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65520,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65505
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65505,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65506,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65508,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65512,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65520,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 4,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65505
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65505,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65506,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65508,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65512,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65520,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1024
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1024,
+      "freq": 1024
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 2048,
+      "freq": 1024
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 4096,
+      "freq": 1024
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 8192,
+      "freq": 1024
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 16384,
+      "freq": 1024
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 32768,
+      "freq": 1024
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1441
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1441,
+      "freq": 1423
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 2864,
+      "freq": 1400
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 5664,
+      "freq": 1352
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 11072,
+      "freq": 1262
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 21168,
+      "freq": 1099
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 38752,
+      "freq": 837
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1951
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1951,
+      "freq": 1907
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 3858,
+      "freq": 1841
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 7540,
+      "freq": 1717
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 14408,
+      "freq": 1493
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 26352,
+      "freq": 1133
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 44480,
+      "freq": 658
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 2577
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 2577,
+      "freq": 2487
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 5064,
+      "freq": 2354
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 9772,
+      "freq": 2115
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 18232,
+      "freq": 1709
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 31904,
+      "freq": 1120
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 49824,
+      "freq": 491
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 3350
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 3350,
+      "freq": 3186
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 6536,
+      "freq": 2956
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 12448,
+      "freq": 2544
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 22624,
+      "freq": 1890
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 37744,
+      "freq": 1055
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 54624,
+      "freq": 341
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 4324
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 4324,
+      "freq": 4042
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 8366,
+      "freq": 3657
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 15680,
+      "freq": 2994
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 27656,
+      "freq": 2019
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 43808,
+      "freq": 932
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 58720,
+      "freq": 213
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 5581
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 5581,
+      "freq": 5107
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 10688,
+      "freq": 4476
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 19640,
+      "freq": 3444
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 33416,
+      "freq": 2055
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 49856,
+      "freq": 754
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 61920,
+      "freq": 113
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 7258
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 7258,
+      "freq": 6454
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 13712,
+      "freq": 5424
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 24560,
+      "freq": 3840
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 39920,
+      "freq": 1952
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 55536,
+      "freq": 531
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 64032,
+      "freq": 47
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 9579
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 9579,
+      "freq": 8179
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 17758,
+      "freq": 6473
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 30704,
+      "freq": 4080
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 47024,
+      "freq": 1660
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 60304,
+      "freq": 301
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65120,
+      "freq": 13
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 12907
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 12907,
+      "freq": 10365
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 23272,
+      "freq": 7504
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 38280,
+      "freq": 3980
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 54200,
+      "freq": 1171
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 63568,
+      "freq": 119
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65472,
+      "freq": 2
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 17852
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 17852,
+      "freq": 12988
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 30840,
+      "freq": 8164
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 47168,
+      "freq": 3304
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 60384,
+      "freq": 594
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65136,
+      "freq": 23
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65504,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 25441
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 25441,
+      "freq": 15565
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 41006,
+      "freq": 7673
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 56352,
+      "freq": 1974
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 64248,
+      "freq": 155
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65488,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65504,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 37208
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 37208,
+      "freq": 16084
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 53292,
+      "freq": 4978
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 63248,
+      "freq": 552
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65456,
+      "freq": 4
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65488,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65504,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 53649
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 53649,
+      "freq": 9731
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 63380,
+      "freq": 1042
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65464,
+      "freq": 4
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65480,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65488,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65504,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65147
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65147,
+      "freq": 327
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65474,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65476,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65480,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65488,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65504,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 5,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65473
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65473,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65474,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65476,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65480,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65488,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65504,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 512
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 512,
+      "freq": 512
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 1024,
+      "freq": 512
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 2048,
+      "freq": 512
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 4096,
+      "freq": 512
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 8192,
+      "freq": 512
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 16384,
+      "freq": 512
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 32768,
+      "freq": 512
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 722
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 722,
+      "freq": 718
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 1440,
+      "freq": 712
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 2864,
+      "freq": 700
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 5664,
+      "freq": 676
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 11072,
+      "freq": 632
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 21184,
+      "freq": 550
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 38784,
+      "freq": 418
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 981
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 981,
+      "freq": 971
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 1952,
+      "freq": 952
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 3856,
+      "freq": 920
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 7536,
+      "freq": 858
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 14400,
+      "freq": 748
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 26368,
+      "freq": 566
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 44480,
+      "freq": 329
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1300
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1300,
+      "freq": 1276
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 2576,
+      "freq": 1244
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 5064,
+      "freq": 1178
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 9776,
+      "freq": 1058
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 18240,
+      "freq": 854
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 31904,
+      "freq": 559
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 49792,
+      "freq": 246
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1696
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1696,
+      "freq": 1654
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 3350,
+      "freq": 1593
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 6536,
+      "freq": 1478
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 12448,
+      "freq": 1272
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 22624,
+      "freq": 946
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 37760,
+      "freq": 526
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 54592,
+      "freq": 171
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 2198
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 2198,
+      "freq": 2126
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 4324,
+      "freq": 2022
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 8368,
+      "freq": 1828
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 15680,
+      "freq": 1498
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 27664,
+      "freq": 1009
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 43808,
+      "freq": 467
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 58752,
+      "freq": 106
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 2852
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 2852,
+      "freq": 2728
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 5580,
+      "freq": 2554
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 10688,
+      "freq": 2238
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 19640,
+      "freq": 1721
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 33408,
+      "freq": 1028
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 49856,
+      "freq": 376
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 61888,
+      "freq": 57
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 3736
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 3736,
+      "freq": 3522
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 7258,
+      "freq": 3227
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 13712,
+      "freq": 2712
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 24560,
+      "freq": 1920
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 39920,
+      "freq": 977
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 55552,
+      "freq": 266
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 64064,
+      "freq": 23
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 4979
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 4979,
+      "freq": 4601
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 9580,
+      "freq": 4090
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 17760,
+      "freq": 3236
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 30704,
+      "freq": 2040
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 47024,
+      "freq": 831
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 60320,
+      "freq": 151
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65152,
+      "freq": 6
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 6807
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 6807,
+      "freq": 6101
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 12908,
+      "freq": 5182
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 23272,
+      "freq": 3752
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 38280,
+      "freq": 1991
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 54208,
+      "freq": 586
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 63584,
+      "freq": 59
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65472,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 9634
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 9634,
+      "freq": 8218
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 17852,
+      "freq": 6494
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 30840,
+      "freq": 4082
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 47168,
+      "freq": 1652
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 60384,
+      "freq": 296
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65120,
+      "freq": 11
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65472,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 14275
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 14275,
+      "freq": 11165
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 25440,
+      "freq": 7784
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 41008,
+      "freq": 3836
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 56352,
+      "freq": 988
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 64256,
+      "freq": 74
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65440,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65472,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 22449
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 22449,
+      "freq": 14759
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 37208,
+      "freq": 8042
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 53292,
+      "freq": 2489
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 63248,
+      "freq": 272
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65424,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65440,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65472,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 37625
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 37625,
+      "freq": 16023
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 53648,
+      "freq": 4866
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 63380,
+      "freq": 509
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65416,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65424,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65440,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65472,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 60485
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 60485,
+      "freq": 4663
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65148,
+      "freq": 132
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65412,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65416,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65424,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65440,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65472,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 6,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65409
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65409,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65410,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65412,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65416,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65424,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65440,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65472,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 256
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 256,
+      "freq": 256
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 512,
+      "freq": 256
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 1024,
+      "freq": 256
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 2048,
+      "freq": 256
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 4096,
+      "freq": 256
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 8192,
+      "freq": 256
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 16384,
+      "freq": 256
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 32768,
+      "freq": 256
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 362
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 362,
+      "freq": 360
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 722,
+      "freq": 359
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 1440,
+      "freq": 356
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 2864,
+      "freq": 350
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 5664,
+      "freq": 338
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 11072,
+      "freq": 316
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 21184,
+      "freq": 275
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 38784,
+      "freq": 209
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 492
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 492,
+      "freq": 488
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 980,
+      "freq": 486
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 1952,
+      "freq": 476
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 3856,
+      "freq": 460
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 7536,
+      "freq": 429
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 14400,
+      "freq": 374
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 26368,
+      "freq": 284
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 44544,
+      "freq": 164
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 653
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 653,
+      "freq": 647
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 1300,
+      "freq": 638
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 2576,
+      "freq": 622
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 5064,
+      "freq": 589
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 9776,
+      "freq": 529
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 18240,
+      "freq": 426
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 31872,
+      "freq": 280
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 49792,
+      "freq": 123
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 853
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 853,
+      "freq": 843
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 1696,
+      "freq": 828
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 3352,
+      "freq": 796
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 6536,
+      "freq": 739
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 12448,
+      "freq": 636
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 22624,
+      "freq": 473
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 37760,
+      "freq": 264
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 54656,
+      "freq": 85
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1108
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1108,
+      "freq": 1090
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 2198,
+      "freq": 1063
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 4324,
+      "freq": 1011
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 8368,
+      "freq": 914
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 15680,
+      "freq": 748
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 27648,
+      "freq": 504
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 43776,
+      "freq": 234
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 58752,
+      "freq": 53
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1442
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1442,
+      "freq": 1410
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 2852,
+      "freq": 1364
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 5580,
+      "freq": 1277
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 10688,
+      "freq": 1120
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 19648,
+      "freq": 860
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 33408,
+      "freq": 514
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 49856,
+      "freq": 189
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 61952,
+      "freq": 28
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1895
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1895,
+      "freq": 1841
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 3736,
+      "freq": 1760
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 7256,
+      "freq": 1614
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 13712,
+      "freq": 1356
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 24560,
+      "freq": 961
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 39936,
+      "freq": 488
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 55552,
+      "freq": 132
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 64000,
+      "freq": 12
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 2538
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 2538,
+      "freq": 2442
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 4980,
+      "freq": 2300
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 9580,
+      "freq": 2045
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 17760,
+      "freq": 1618
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 30704,
+      "freq": 1021
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 47040,
+      "freq": 414
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 60288,
+      "freq": 76
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65152,
+      "freq": 3
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 3497
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 3497,
+      "freq": 3311
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 6808,
+      "freq": 3050
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 12908,
+      "freq": 2591
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 23272,
+      "freq": 1875
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 38272,
+      "freq": 996
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 54208,
+      "freq": 292
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 63552,
+      "freq": 29
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65408,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 5008
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 5008,
+      "freq": 4626
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 9634,
+      "freq": 4109
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 17852,
+      "freq": 3247
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 30840,
+      "freq": 2041
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 47168,
+      "freq": 826
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 60384,
+      "freq": 149
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65152,
+      "freq": 4
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65408,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 7575
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 7575,
+      "freq": 6701
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 14276,
+      "freq": 5582
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 25440,
+      "freq": 3892
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 41008,
+      "freq": 1918
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 56352,
+      "freq": 494
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 64256,
+      "freq": 34
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65344,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65408,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 12397
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 12397,
+      "freq": 10051
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 22448,
+      "freq": 7380
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 37208,
+      "freq": 4020
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 53288,
+      "freq": 1245
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 63248,
+      "freq": 129
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65312,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65344,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65408,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 22767
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 22767,
+      "freq": 14857
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 37624,
+      "freq": 8012
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 53648,
+      "freq": 2432
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 63376,
+      "freq": 240
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65296,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65312,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65344,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65408,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 47343
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 47343,
+      "freq": 13141
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 60484,
+      "freq": 2332
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65148,
+      "freq": 35
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65288,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65296,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65312,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65344,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65408,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 7,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65281
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65281,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65282,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65284,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65288,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65296,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65312,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65344,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65408,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 0,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 128
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 128,
+      "freq": 128
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 256,
+      "freq": 128
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 512,
+      "freq": 128
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 1024,
+      "freq": 128
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 2048,
+      "freq": 128
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 4096,
+      "freq": 128
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 8192,
+      "freq": 128
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 16384,
+      "freq": 128
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 32768,
+      "freq": 128
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 1,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 181
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 181,
+      "freq": 181
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 362,
+      "freq": 179
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 720,
+      "freq": 180
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 1440,
+      "freq": 178
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 2864,
+      "freq": 175
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 5664,
+      "freq": 169
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 11072,
+      "freq": 157
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 21120,
+      "freq": 137
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 38656,
+      "freq": 105
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 2,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 246
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 246,
+      "freq": 246
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 492,
+      "freq": 244
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 980,
+      "freq": 243
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 1952,
+      "freq": 238
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 3856,
+      "freq": 231
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 7552,
+      "freq": 214
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 14400,
+      "freq": 187
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 26368,
+      "freq": 142
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 44544,
+      "freq": 82
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 3,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 327
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 327,
+      "freq": 325
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 652,
+      "freq": 324
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 1300,
+      "freq": 319
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 2576,
+      "freq": 310
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 5056,
+      "freq": 294
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 9760,
+      "freq": 265
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 18240,
+      "freq": 213
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 31872,
+      "freq": 141
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 49920,
+      "freq": 61
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 4,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 428
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 428,
+      "freq": 424
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 852,
+      "freq": 422
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 1696,
+      "freq": 414
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 3352,
+      "freq": 397
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 6528,
+      "freq": 370
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 12448,
+      "freq": 319
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 22656,
+      "freq": 236
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 37760,
+      "freq": 131
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 54528,
+      "freq": 43
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 5,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 557
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 557,
+      "freq": 551
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 1108,
+      "freq": 546
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 2200,
+      "freq": 530
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 4320,
+      "freq": 506
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 8368,
+      "freq": 457
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 15680,
+      "freq": 374
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 27648,
+      "freq": 252
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 43776,
+      "freq": 116
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 58624,
+      "freq": 27
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 6,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 725
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 725,
+      "freq": 717
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 1442,
+      "freq": 705
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 2852,
+      "freq": 683
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 5584,
+      "freq": 638
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 10688,
+      "freq": 560
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 19648,
+      "freq": 430
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 33408,
+      "freq": 256
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 49792,
+      "freq": 95
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 61952,
+      "freq": 14
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 7,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 955
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 955,
+      "freq": 941
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 1896,
+      "freq": 920
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 3736,
+      "freq": 880
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 7256,
+      "freq": 807
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 13712,
+      "freq": 677
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 24544,
+      "freq": 481
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 39936,
+      "freq": 244
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 55552,
+      "freq": 66
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 64000,
+      "freq": 6
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 8,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1282
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1282,
+      "freq": 1256
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 2538,
+      "freq": 1221
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 4980,
+      "freq": 1149
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 9576,
+      "freq": 1023
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 17760,
+      "freq": 810
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 30720,
+      "freq": 510
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 47040,
+      "freq": 207
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 60288,
+      "freq": 37
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 65024,
+      "freq": 2
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 9,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 1772
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 1772,
+      "freq": 1724
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 3496,
+      "freq": 1656
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 6808,
+      "freq": 1524
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 12904,
+      "freq": 1295
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 23264,
+      "freq": 938
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 38272,
+      "freq": 498
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 54208,
+      "freq": 147
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 63616,
+      "freq": 13
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 65280,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 10,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 2554
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 2554,
+      "freq": 2454
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 5008,
+      "freq": 2312
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 9632,
+      "freq": 2056
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 17856,
+      "freq": 1624
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 30848,
+      "freq": 1020
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 47168,
+      "freq": 414
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 60416,
+      "freq": 74
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65152,
+      "freq": 1
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 65280,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 11,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 3904
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 3904,
+      "freq": 3672
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 7576,
+      "freq": 3350
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 14276,
+      "freq": 2791
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 25440,
+      "freq": 1946
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 41008,
+      "freq": 959
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 56352,
+      "freq": 247
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 64256,
+      "freq": 14
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65152,
+      "freq": 1
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 65280,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 12,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 6523
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 6523,
+      "freq": 5873
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 12396,
+      "freq": 5026
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 22448,
+      "freq": 3690
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 37208,
+      "freq": 2011
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 53296,
+      "freq": 621
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 63232,
+      "freq": 58
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65088,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65152,
+      "freq": 1
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 65280,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 13,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 12594
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 12594,
+      "freq": 10174
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 22768,
+      "freq": 7428
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 37624,
+      "freq": 4006
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 53648,
+      "freq": 1216
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 63376,
+      "freq": 105
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65056,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65088,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65152,
+      "freq": 1
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 65280,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 14,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 31006
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 31006,
+      "freq": 16338
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 47344,
+      "freq": 6570
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 60484,
+      "freq": 1137
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65032,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65040,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65056,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65088,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65152,
+      "freq": 1
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 65280,
+      "freq": 1
+     }
+    ]
+   },
+   {
+    "eab": 8,
+    "q": 15,
+    "segments": [
+     {
+      "first_symbol": 0,
+      "symbols": 1,
+      "base": 0,
+      "freq": 65025
+     },
+     {
+      "first_symbol": 1,
+      "symbols": 1,
+      "base": 65025,
+      "freq": 1
+     },
+     {
+      "first_symbol": 2,
+      "symbols": 2,
+      "base": 65026,
+      "freq": 1
+     },
+     {
+      "first_symbol": 4,
+      "symbols": 4,
+      "base": 65028,
+      "freq": 1
+     },
+     {
+      "first_symbol": 8,
+      "symbols": 8,
+      "base": 65032,
+      "freq": 1
+     },
+     {
+      "first_symbol": 16,
+      "symbols": 16,
+      "base": 65040,
+      "freq": 1
+     },
+     {
+      "first_symbol": 32,
+      "symbols": 32,
+      "base": 65056,
+      "freq": 1
+     },
+     {
+      "first_symbol": 64,
+      "symbols": 64,
+      "base": 65088,
+      "freq": 1
+     },
+     {
+      "first_symbol": 128,
+      "symbols": 128,
+      "base": 65152,
+      "freq": 1
+     },
+     {
+      "first_symbol": 256,
+      "symbols": 256,
+      "base": 65280,
+      "freq": 1
+     }
+    ]
+   }
+  ]
+ },
+ "bc1": {
+  "presets": {
+   "description": "256 preset slots, [R0, G0, B0, R1, G1, B1] (5, 6, 5, 5, 6, 5 bits). null = never referenced, not fitted.",
+   "unreferenced_slots": [
+    0,
+    4
+   ],
+   "slots": [
+    null,
+    [
+     7,
+     29,
+     6,
+     8,
+     30,
+     7
+    ],
+    [
+     15,
+     29,
+     15,
+     16,
+     36,
+     17
+    ],
+    [
+     20,
+     37,
+     14,
+     3,
+     6,
+     2
+    ],
+    null,
+    [
+     10,
+     21,
+     11,
+     6,
+     15,
+     7
+    ],
+    [
+     12,
+     23,
+     11,
+     7,
+     15,
+     6
+    ],
+    [
+     12,
+     26,
+     12,
+     7,
+     15,
+     7
+    ],
+    [
+     22,
+     36,
+     15,
+     20,
+     32,
+     14
+    ],
+    [
+     14,
+     23,
+     8,
+     1,
+     2,
+     1
+    ],
+    [
+     23,
+     5,
+     30,
+     9,
+     5,
+     30
+    ],
+    [
+     11,
+     22,
+     11,
+     7,
+     15,
+     7
+    ],
+    [
+     17,
+     22,
+     7,
+     10,
+     11,
+     3
+    ],
+    [
+     12,
+     25,
+     12,
+     7,
+     16,
+     7
+    ],
+    [
+     13,
+     28,
+     8,
+     5,
+     12,
+     3
+    ],
+    [
+     11,
+     20,
+     8,
+     16,
+     31,
+     14
+    ],
+    [
+     23,
+     32,
+     30,
+     17,
+     12,
+     29
+    ],
+    [
+     8,
+     44,
+     30,
+     6,
+     26,
+     30
+    ],
+    [
+     10,
+     24,
+     30,
+     6,
+     45,
+     30
+    ],
+    [
+     10,
+     12,
+     4,
+     8,
+     8,
+     2
+    ],
+    [
+     16,
+     23,
+     30,
+     14,
+     6,
+     26
+    ],
+    [
+     12,
+     25,
+     13,
+     10,
+     22,
+     12
+    ],
+    [
+     19,
+     27,
+     10,
+     13,
+     16,
+     5
+    ],
+    [
+     11,
+     24,
+     12,
+     4,
+     11,
+     6
+    ],
+    [
+     29,
+     60,
+     29,
+     6,
+     13,
+     6
+    ],
+    [
+     17,
+     31,
+     11,
+     1,
+     2,
+     1
+    ],
+    [
+     26,
+     54,
+     24,
+     12,
+     24,
+     10
+    ],
+    [
+     23,
+     48,
+     30,
+     20,
+     37,
+     30
+    ],
+    [
+     16,
+     23,
+     10,
+     10,
+     15,
+     6
+    ],
+    [
+     11,
+     24,
+     10,
+     6,
+     13,
+     5
+    ],
+    [
+     18,
+     52,
+     30,
+     14,
+     22,
+     30
+    ],
+    [
+     14,
+     51,
+     30,
+     9,
+     34,
+     30
+    ],
+    [
+     2,
+     3,
+     1,
+     19,
+     37,
+     16
+    ],
+    [
+     14,
+     15,
+     30,
+     10,
+     32,
+     30
+    ],
+    [
+     29,
+     57,
+     27,
+     27,
+     52,
+     25
+    ],
+    [
+     13,
+     29,
+     15,
+     8,
+     20,
+     11
+    ],
+    [
+     13,
+     17,
+     5,
+     9,
+     10,
+     3
+    ],
+    [
+     18,
+     50,
+     29,
+     15,
+     10,
+     29
+    ],
+    [
+     11,
+     25,
+     13,
+     8,
+     19,
+     10
+    ],
+    [
+     17,
+     31,
+     12,
+     6,
+     12,
+     4
+    ],
+    [
+     22,
+     18,
+     30,
+     19,
+     41,
+     30
+    ],
+    [
+     10,
+     22,
+     11,
+     8,
+     18,
+     9
+    ],
+    [
+     18,
+     30,
+     31,
+     10,
+     44,
+     30
+    ],
+    [
+     25,
+     50,
+     24,
+     2,
+     4,
+     1
+    ],
+    [
+     11,
+     30,
+     31,
+     7,
+     15,
+     29
+    ],
+    [
+     12,
+     19,
+     8,
+     11,
+     16,
+     7
+    ],
+    [
+     19,
+     29,
+     30,
+     14,
+     55,
+     28
+    ],
+    [
+     9,
+     20,
+     10,
+     4,
+     10,
+     5
+    ],
+    [
+     12,
+     23,
+     10,
+     7,
+     14,
+     5
+    ],
+    [
+     26,
+     53,
+     25,
+     6,
+     13,
+     6
+    ],
+    [
+     19,
+     27,
+     31,
+     11,
+     19,
+     30
+    ],
+    [
+     21,
+     31,
+     30,
+     22,
+     31,
+     30
+    ],
+    [
+     10,
+     19,
+     5,
+     11,
+     21,
+     6
+    ],
+    [
+     30,
+     50,
+     3,
+     29,
+     46,
+     2
+    ],
+    [
+     15,
+     9,
+     30,
+     7,
+     9,
+     30
+    ],
+    [
+     14,
+     18,
+     6,
+     11,
+     14,
+     4
+    ],
+    [
+     28,
+     56,
+     26,
+     4,
+     7,
+     3
+    ],
+    [
+     8,
+     20,
+     10,
+     6,
+     13,
+     7
+    ],
+    [
+     28,
+     58,
+     26,
+     15,
+     32,
+     14
+    ],
+    [
+     10,
+     19,
+     8,
+     7,
+     10,
+     4
+    ],
+    [
+     16,
+     22,
+     9,
+     13,
+     17,
+     7
+    ],
+    [
+     1,
+     2,
+     1,
+     14,
+     28,
+     12
+    ],
+    [
+     22,
+     45,
+     30,
+     9,
+     15,
+     30
+    ],
+    [
+     19,
+     22,
+     30,
+     16,
+     23,
+     31
+    ],
+    [
+     25,
+     50,
+     24,
+     21,
+     43,
+     20
+    ],
+    [
+     6,
+     11,
+     4,
+     16,
+     31,
+     13
+    ],
+    [
+     13,
+     25,
+     8,
+     3,
+     6,
+     1
+    ],
+    [
+     5,
+     9,
+     3,
+     12,
+     24,
+     10
+    ],
+    [
+     16,
+     29,
+     13,
+     8,
+     14,
+     6
+    ],
+    [
+     20,
+     37,
+     16,
+     13,
+     26,
+     10
+    ],
+    [
+     18,
+     35,
+     15,
+     5,
+     9,
+     3
+    ],
+    [
+     13,
+     25,
+     11,
+     7,
+     12,
+     5
+    ],
+    [
+     11,
+     21,
+     7,
+     7,
+     14,
+     4
+    ],
+    [
+     20,
+     39,
+     16,
+     11,
+     21,
+     8
+    ],
+    [
+     16,
+     31,
+     12,
+     4,
+     8,
+     2
+    ],
+    [
+     22,
+     41,
+     30,
+     18,
+     23,
+     30
+    ],
+    [
+     24,
+     50,
+     24,
+     9,
+     20,
+     8
+    ],
+    [
+     3,
+     12,
+     7,
+     4,
+     16,
+     8
+    ],
+    [
+     18,
+     27,
+     12,
+     16,
+     22,
+     10
+    ],
+    [
+     24,
+     49,
+     23,
+     13,
+     28,
+     12
+    ],
+    [
+     24,
+     49,
+     24,
+     18,
+     38,
+     18
+    ],
+    [
+     17,
+     32,
+     12,
+     14,
+     28,
+     9
+    ],
+    [
+     20,
+     10,
+     31,
+     13,
+     10,
+     31
+    ],
+    [
+     7,
+     8,
+     2,
+     5,
+     5,
+     1
+    ],
+    [
+     1,
+     2,
+     1,
+     10,
+     21,
+     9
+    ],
+    [
+     10,
+     18,
+     6,
+     1,
+     1,
+     0
+    ],
+    [
+     22,
+     46,
+     21,
+     1,
+     3,
+     1
+    ],
+    [
+     11,
+     20,
+     8,
+     8,
+     14,
+     5
+    ],
+    [
+     17,
+     35,
+     31,
+     14,
+     14,
+     29
+    ],
+    [
+     16,
+     22,
+     31,
+     12,
+     40,
+     31
+    ],
+    [
+     12,
+     22,
+     9,
+     8,
+     15,
+     6
+    ],
+    [
+     18,
+     15,
+     30,
+     15,
+     33,
+     31
+    ],
+    [
+     19,
+     32,
+     30,
+     15,
+     43,
+     31
+    ],
+    [
+     18,
+     35,
+     15,
+     8,
+     15,
+     5
+    ],
+    [
+     21,
+     43,
+     20,
+     18,
+     37,
+     17
+    ],
+    [
+     10,
+     17,
+     6,
+     9,
+     15,
+     6
+    ],
+    [
+     14,
+     27,
+     12,
+     7,
+     14,
+     5
+    ],
+    [
+     8,
+     15,
+     7,
+     12,
+     26,
+     11
+    ],
+    [
+     18,
+     37,
+     17,
+     1,
+     1,
+     0
+    ],
+    [
+     17,
+     45,
+     30,
+     15,
+     33,
+     31
+    ],
+    [
+     13,
+     24,
+     11,
+     8,
+     17,
+     7
+    ],
+    [
+     23,
+     47,
+     22,
+     16,
+     32,
+     15
+    ],
+    [
+     18,
+     33,
+     13,
+     11,
+     22,
+     8
+    ],
+    [
+     4,
+     10,
+     4,
+     8,
+     17,
+     7
+    ],
+    [
+     1,
+     2,
+     1,
+     3,
+     7,
+     3
+    ],
+    [
+     11,
+     22,
+     9,
+     6,
+     12,
+     4
+    ],
+    [
+     16,
+     28,
+     11,
+     13,
+     24,
+     9
+    ],
+    [
+     12,
+     24,
+     12,
+     7,
+     13,
+     6
+    ],
+    [
+     23,
+     47,
+     22,
+     7,
+     15,
+     6
+    ],
+    [
+     11,
+     32,
+     30,
+     11,
+     31,
+     30
+    ],
+    [
+     14,
+     26,
+     11,
+     10,
+     19,
+     7
+    ],
+    [
+     20,
+     41,
+     19,
+     1,
+     3,
+     1
+    ],
+    [
+     14,
+     27,
+     12,
+     8,
+     17,
+     6
+    ],
+    [
+     11,
+     21,
+     9,
+     8,
+     15,
+     6
+    ],
+    [
+     1,
+     2,
+     1,
+     7,
+     13,
+     6
+    ],
+    [
+     19,
+     34,
+     14,
+     16,
+     30,
+     12
+    ],
+    [
+     13,
+     27,
+     13,
+     7,
+     16,
+     7
+    ],
+    [
+     15,
+     32,
+     16,
+     8,
+     19,
+     9
+    ],
+    [
+     15,
+     42,
+     31,
+     11,
+     22,
+     30
+    ],
+    [
+     23,
+     48,
+     23,
+     5,
+     10,
+     4
+    ],
+    [
+     22,
+     45,
+     21,
+     11,
+     23,
+     10
+    ],
+    [
+     31,
+     62,
+     30,
+     31,
+     61,
+     29
+    ],
+    [
+     13,
+     26,
+     11,
+     5,
+     8,
+     3
+    ],
+    [
+     19,
+     39,
+     19,
+     9,
+     21,
+     10
+    ],
+    [
+     7,
+     14,
+     2,
+     6,
+     12,
+     2
+    ],
+    [
+     21,
+     42,
+     20,
+     4,
+     7,
+     3
+    ],
+    [
+     10,
+     17,
+     7,
+     8,
+     13,
+     5
+    ],
+    [
+     10,
+     22,
+     8,
+     11,
+     19,
+     7
+    ],
+    [
+     19,
+     33,
+     31,
+     12,
+     31,
+     31
+    ],
+    [
+     21,
+     43,
+     20,
+     5,
+     11,
+     5
+    ],
+    [
+     9,
+     21,
+     8,
+     8,
+     13,
+     7
+    ],
+    [
+     10,
+     21,
+     10,
+     6,
+     13,
+     6
+    ],
+    [
+     15,
+     29,
+     12,
+     11,
+     21,
+     8
+    ],
+    [
+     21,
+     43,
+     20,
+     9,
+     19,
+     8
+    ],
+    [
+     3,
+     8,
+     3,
+     5,
+     11,
+     5
+    ],
+    [
+     16,
+     31,
+     13,
+     9,
+     18,
+     7
+    ],
+    [
+     11,
+     21,
+     11,
+     6,
+     13,
+     6
+    ],
+    [
+     10,
+     21,
+     10,
+     7,
+     15,
+     7
+    ],
+    [
+     27,
+     3,
+     1,
+     26,
+     1,
+     0
+    ],
+    [
+     18,
+     37,
+     18,
+     16,
+     32,
+     16
+    ],
+    [
+     12,
+     23,
+     10,
+     9,
+     18,
+     7
+    ],
+    [
+     12,
+     25,
+     12,
+     8,
+     18,
+     8
+    ],
+    [
+     11,
+     20,
+     9,
+     2,
+     5,
+     1
+    ],
+    [
+     7,
+     15,
+     7,
+     8,
+     18,
+     9
+    ],
+    [
+     17,
+     33,
+     15,
+     13,
+     24,
+     11
+    ],
+    [
+     9,
+     19,
+     9,
+     7,
+     15,
+     7
+    ],
+    [
+     21,
+     43,
+     20,
+     13,
+     28,
+     12
+    ],
+    [
+     17,
+     36,
+     17,
+     2,
+     4,
+     2
+    ],
+    [
+     10,
+     19,
+     9,
+     6,
+     13,
+     5
+    ],
+    [
+     20,
+     41,
+     19,
+     7,
+     14,
+     7
+    ],
+    [
+     3,
+     9,
+     6,
+     2,
+     8,
+     5
+    ],
+    [
+     13,
+     24,
+     10,
+     11,
+     20,
+     8
+    ],
+    [
+     18,
+     39,
+     18,
+     6,
+     10,
+     5
+    ],
+    [
+     19,
+     38,
+     18,
+     8,
+     17,
+     8
+    ],
+    [
+     16,
+     35,
+     17,
+     4,
+     11,
+     4
+    ],
+    [
+     11,
+     23,
+     11,
+     10,
+     21,
+     10
+    ],
+    [
+     17,
+     36,
+     17,
+     7,
+     15,
+     7
+    ],
+    [
+     13,
+     27,
+     13,
+     7,
+     13,
+     7
+    ],
+    [
+     9,
+     15,
+     4,
+     8,
+     13,
+     4
+    ],
+    [
+     9,
+     19,
+     7,
+     6,
+     9,
+     3
+    ],
+    [
+     19,
+     39,
+     19,
+     11,
+     25,
+     11
+    ],
+    [
+     11,
+     23,
+     11,
+     8,
+     17,
+     8
+    ],
+    [
+     14,
+     29,
+     14,
+     7,
+     16,
+     7
+    ],
+    [
+     12,
+     22,
+     8,
+     5,
+     9,
+     4
+    ],
+    [
+     10,
+     20,
+     9,
+     8,
+     17,
+     8
+    ],
+    [
+     21,
+     41,
+     19,
+     15,
+     32,
+     14
+    ],
+    [
+     14,
+     28,
+     13,
+     1,
+     2,
+     0
+    ],
+    [
+     8,
+     16,
+     8,
+     7,
+     14,
+     7
+    ],
+    [
+     9,
+     18,
+     8,
+     8,
+     16,
+     7
+    ],
+    [
+     10,
+     17,
+     7,
+     3,
+     4,
+     1
+    ],
+    [
+     14,
+     28,
+     13,
+     2,
+     4,
+     1
+    ],
+    [
+     14,
+     30,
+     14,
+     3,
+     6,
+     3
+    ],
+    [
+     19,
+     38,
+     18,
+     5,
+     11,
+     5
+    ],
+    [
+     12,
+     26,
+     12,
+     1,
+     2,
+     1
+    ],
+    [
+     9,
+     16,
+     6,
+     8,
+     13,
+     5
+    ],
+    [
+     8,
+     13,
+     4,
+     7,
+     11,
+     4
+    ],
+    [
+     16,
+     35,
+     16,
+     4,
+     8,
+     4
+    ],
+    [
+     13,
+     28,
+     13,
+     4,
+     9,
+     4
+    ],
+    [
+     15,
+     31,
+     15,
+     6,
+     13,
+     6
+    ],
+    [
+     12,
+     24,
+     11,
+     9,
+     19,
+     9
+    ],
+    [
+     9,
+     19,
+     8,
+     7,
+     14,
+     6
+    ],
+    [
+     14,
+     28,
+     13,
+     5,
+     10,
+     4
+    ],
+    [
+     10,
+     21,
+     7,
+     4,
+     6,
+     2
+    ],
+    [
+     16,
+     34,
+     17,
+     11,
+     25,
+     12
+    ],
+    [
+     15,
+     30,
+     15,
+     8,
+     16,
+     8
+    ],
+    [
+     13,
+     27,
+     13,
+     10,
+     20,
+     10
+    ],
+    [
+     9,
+     20,
+     9,
+     0,
+     1,
+     0
+    ],
+    [
+     16,
+     32,
+     15,
+     2,
+     4,
+     2
+    ],
+    [
+     13,
+     27,
+     12,
+     3,
+     6,
+     3
+    ],
+    [
+     13,
+     26,
+     12,
+     12,
+     23,
+     11
+    ],
+    [
+     12,
+     25,
+     12,
+     5,
+     11,
+     5
+    ],
+    [
+     11,
+     23,
+     11,
+     5,
+     11,
+     5
+    ],
+    [
+     16,
+     34,
+     16,
+     7,
+     13,
+     6
+    ],
+    [
+     16,
+     35,
+     31,
+     15,
+     25,
+     31
+    ],
+    [
+     16,
+     33,
+     16,
+     7,
+     16,
+     7
+    ],
+    [
+     13,
+     26,
+     13,
+     8,
+     19,
+     8
+    ],
+    [
+     18,
+     35,
+     17,
+     11,
+     23,
+     10
+    ],
+    [
+     18,
+     36,
+     18,
+     13,
+     28,
+     13
+    ],
+    [
+     12,
+     25,
+     12,
+     4,
+     9,
+     4
+    ],
+    [
+     9,
+     18,
+     7,
+     6,
+     11,
+     4
+    ],
+    [
+     15,
+     30,
+     14,
+     9,
+     20,
+     9
+    ],
+    [
+     17,
+     35,
+     16,
+     9,
+     19,
+     9
+    ],
+    [
+     11,
+     24,
+     11,
+     2,
+     4,
+     2
+    ],
+    [
+     16,
+     33,
+     16,
+     0,
+     1,
+     0
+    ],
+    [
+     15,
+     31,
+     15,
+     4,
+     9,
+     4
+    ],
+    [
+     16,
+     31,
+     15,
+     14,
+     27,
+     13
+    ],
+    [
+     14,
+     29,
+     14,
+     13,
+     25,
+     12
+    ],
+    [
+     11,
+     23,
+     11,
+     3,
+     6,
+     3
+    ],
+    [
+     16,
+     32,
+     16,
+     10,
+     22,
+     10
+    ],
+    [
+     11,
+     22,
+     11,
+     4,
+     9,
+     4
+    ],
+    [
+     11,
+     22,
+     10,
+     1,
+     2,
+     0
+    ],
+    [
+     8,
+     14,
+     5,
+     2,
+     4,
+     1
+    ],
+    [
+     9,
+     16,
+     6,
+     6,
+     10,
+     4
+    ],
+    [
+     10,
+     21,
+     10,
+     9,
+     19,
+     9
+    ],
+    [
+     14,
+     29,
+     14,
+     11,
+     23,
+     11
+    ],
+    [
+     9,
+     18,
+     8,
+     6,
+     13,
+     6
+    ],
+    [
+     6,
+     13,
+     6,
+     5,
+     11,
+     5
+    ],
+    [
+     7,
+     14,
+     6,
+     0,
+     1,
+     0
+    ],
+    [
+     4,
+     7,
+     2,
+     3,
+     4,
+     1
+    ],
+    [
+     10,
+     20,
+     9,
+     4,
+     8,
+     4
+    ],
+    [
+     9,
+     17,
+     7,
+     5,
+     9,
+     3
+    ],
+    [
+     7,
+     14,
+     7,
+     1,
+     2,
+     1
+    ],
+    [
+     10,
+     20,
+     10,
+     6,
+     11,
+     5
+    ],
+    [
+     8,
+     15,
+     5,
+     4,
+     6,
+     2
+    ],
+    [
+     8,
+     17,
+     8,
+     1,
+     2,
+     1
+    ],
+    [
+     10,
+     20,
+     10,
+     3,
+     6,
+     3
+    ],
+    [
+     7,
+     10,
+     3,
+     6,
+     8,
+     3
+    ],
+    [
+     8,
+     15,
+     7,
+     6,
+     12,
+     6
+    ],
+    [
+     9,
+     19,
+     9,
+     2,
+     4,
+     2
+    ],
+    [
+     6,
+     11,
+     4,
+     3,
+     4,
+     1
+    ],
+    [
+     6,
+     11,
+     4,
+     0,
+     1,
+     0
+    ],
+    [
+     8,
+     16,
+     7,
+     2,
+     5,
+     2
+    ],
+    [
+     16,
+     34,
+     16,
+     15,
+     29,
+     15
+    ],
+    [
+     7,
+     16,
+     7,
+     5,
+     10,
+     5
+    ],
+    [
+     8,
+     14,
+     5,
+     5,
+     9,
+     3
+    ],
+    [
+     9,
+     18,
+     8,
+     4,
+     8,
+     4
+    ],
+    [
+     5,
+     9,
+     3,
+     4,
+     7,
+     2
+    ],
+    [
+     9,
+     18,
+     8,
+     5,
+     10,
+     5
+    ],
+    [
+     6,
+     12,
+     6,
+     2,
+     4,
+     2
+    ],
+    [
+     7,
+     12,
+     5,
+     4,
+     7,
+     3
+    ],
+    [
+     5,
+     11,
+     5,
+     1,
+     2,
+     1
+    ],
+    [
+     8,
+     17,
+     8,
+     3,
+     6,
+     3
+    ],
+    [
+     16,
+     31,
+     31,
+     16,
+     32,
+     31
+    ],
+    [
+     7,
+     14,
+     7,
+     3,
+     6,
+     3
+    ],
+    [
+     5,
+     11,
+     6,
+     4,
+     9,
+     4
+    ],
+    [
+     7,
+     15,
+     7,
+     4,
+     8,
+     4
+    ],
+    [
+     2,
+     4,
+     2,
+     0,
+     0,
+     1
+    ],
+    [
+     5,
+     11,
+     5,
+     3,
+     6,
+     3
+    ],
+    [
+     4,
+     8,
+     4,
+     1,
+     1,
+     1
+    ],
+    [
+     3,
+     6,
+     3,
+     1,
+     2,
+     1
+    ],
+    [
+     2,
+     4,
+     1,
+     1,
+     2,
+     1
+    ],
+    [
+     4,
+     8,
+     4,
+     3,
+     6,
+     3
+    ],
+    [
+     3,
+     6,
+     3,
+     2,
+     4,
+     2
+    ],
+    [
+     4,
+     9,
+     4,
+     2,
+     4,
+     2
+    ],
+    [
+     17,
+     27,
+     31,
+     15,
+     34,
+     31
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  "selector_codebook": {
+   "description": "Symbol -> four 2-bit BC1 codes of a 2x2 pixel group in order top-left, top-right, bottom-left, bottom-right.",
+   "uncertain_symbols": [
+    229,
+    230,
+    231,
+    235,
+    247,
+    248,
+    254,
+    255
+   ],
+   "uncertain_note": "Rare mirror pairs on which two independent fits disagree.",
+   "entries": [
+    [
+     2,
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3,
+     3
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     2,
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     1,
+     3
+    ],
+    [
+     2,
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     1,
+     1
+    ],
+    [
+     2,
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3,
+     1
+    ],
+    [
+     2,
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     1,
+     3,
+     3
+    ],
+    [
+     1,
+     3,
+     3,
+     3
+    ],
+    [
+     1,
+     1,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     3,
+     3
+    ],
+    [
+     1,
+     3,
+     1,
+     3
+    ],
+    [
+     3,
+     1,
+     3,
+     1
+    ],
+    [
+     2,
+     1,
+     2,
+     1
+    ],
+    [
+     1,
+     2,
+     1,
+     2
+    ],
+    [
+     2,
+     2,
+     2,
+     0
+    ],
+    [
+     2,
+     2,
+     0,
+     2
+    ],
+    [
+     2,
+     0,
+     2,
+     2
+    ],
+    [
+     0,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     2,
+     2,
+     2
+    ],
+    [
+     1,
+     0,
+     1,
+     0
+    ],
+    [
+     2,
+     2,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     0,
+     1
+    ],
+    [
+     3,
+     3,
+     3,
+     0
+    ],
+    [
+     2,
+     1,
+     2,
+     2
+    ],
+    [
+     1,
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     0,
+     3
+    ],
+    [
+     2,
+     3,
+     3,
+     2
+    ],
+    [
+     0,
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     0,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2,
+     1
+    ],
+    [
+     3,
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3,
+     1
+    ],
+    [
+     3,
+     1,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     1,
+     3
+    ],
+    [
+     1,
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3,
+     1
+    ],
+    [
+     3,
+     1,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     1,
+     3
+    ],
+    [
+     3,
+     3,
+     0,
+     0
+    ],
+    [
+     1,
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     3
+    ],
+    [
+     2,
+     2,
+     0,
+     0
+    ],
+    [
+     1,
+     3,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     3,
+     1
+    ],
+    [
+     3,
+     3,
+     2,
+     0
+    ],
+    [
+     2,
+     3,
+     2,
+     1
+    ],
+    [
+     0,
+     0,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     0,
+     2
+    ],
+    [
+     0,
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     3,
+     3,
+     0
+    ],
+    [
+     2,
+     0,
+     3,
+     3
+    ],
+    [
+     1,
+     2,
+     3,
+     2
+    ],
+    [
+     1,
+     1,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     3,
+     1
+    ],
+    [
+     3,
+     2,
+     1,
+     2
+    ],
+    [
+     3,
+     2,
+     3,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     2
+    ],
+    [
+     2,
+     3,
+     0,
+     3
+    ],
+    [
+     0,
+     3,
+     2,
+     3
+    ],
+    [
+     0,
+     2,
+     1,
+     1
+    ],
+    [
+     3,
+     0,
+     3,
+     2
+    ],
+    [
+     3,
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     0,
+     2,
+     2
+    ],
+    [
+     2,
+     0,
+     1,
+     1
+    ],
+    [
+     2,
+     3,
+     1,
+     3
+    ],
+    [
+     3,
+     2,
+     3,
+     1
+    ],
+    [
+     3,
+     2,
+     2,
+     0
+    ],
+    [
+     3,
+     1,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     1,
+     1
+    ],
+    [
+     3,
+     1,
+     0,
+     3
+    ],
+    [
+     1,
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     1,
+     1
+    ],
+    [
+     2,
+     0,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     0,
+     2
+    ],
+    [
+     0,
+     3,
+     0,
+     3
+    ],
+    [
+     3,
+     3,
+     2,
+     1
+    ],
+    [
+     1,
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     1,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     1,
+     2
+    ],
+    [
+     0,
+     1,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     2,
+     3
+    ],
+    [
+     1,
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     2,
+     0
+    ],
+    [
+     1,
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     0,
+     3,
+     0
+    ],
+    [
+     2,
+     1,
+     0,
+     1
+    ],
+    [
+     2,
+     0,
+     2,
+     0
+    ],
+    [
+     1,
+     1,
+     3,
+     2
+    ],
+    [
+     3,
+     1,
+     1,
+     3
+    ],
+    [
+     1,
+     3,
+     2,
+     0
+    ],
+    [
+     0,
+     2,
+     3,
+     1
+    ],
+    [
+     2,
+     1,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     0,
+     2
+    ],
+    [
+     0,
+     2,
+     0,
+     2
+    ],
+    [
+     0,
+     2,
+     2,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     1,
+     1,
+     2
+    ],
+    [
+     2,
+     0,
+     1,
+     2
+    ],
+    [
+     2,
+     0,
+     1,
+     3
+    ],
+    [
+     3,
+     1,
+     0,
+     2
+    ],
+    [
+     1,
+     3,
+     3,
+     1
+    ],
+    [
+     2,
+     1,
+     3,
+     1
+    ],
+    [
+     3,
+     1,
+     2,
+     1
+    ],
+    [
+     1,
+     3,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     2,
+     1
+    ],
+    [
+     1,
+     2,
+     1,
+     3
+    ],
+    [
+     1,
+     1,
+     1,
+     0
+    ],
+    [
+     3,
+     1,
+     3,
+     0
+    ],
+    [
+     3,
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     3,
+     1,
+     1
+    ],
+    [
+     2,
+     1,
+     0,
+     3
+    ],
+    [
+     1,
+     1,
+     3,
+     0
+    ],
+    [
+     0,
+     3,
+     2,
+     1
+    ],
+    [
+     1,
+     3,
+     0,
+     3
+    ],
+    [
+     1,
+     2,
+     3,
+     0
+    ],
+    [
+     1,
+     1,
+     0,
+     1
+    ],
+    [
+     0,
+     3,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     1,
+     1
+    ],
+    [
+     3,
+     0,
+     3,
+     1
+    ],
+    [
+     1,
+     0,
+     1,
+     1
+    ],
+    [
+     3,
+     0,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     0,
+     3
+    ],
+    [
+     2,
+     3,
+     2,
+     0
+    ],
+    [
+     3,
+     2,
+     0,
+     2
+    ],
+    [
+     1,
+     3,
+     0,
+     2
+    ],
+    [
+     3,
+     1,
+     2,
+     0
+    ],
+    [
+     2,
+     0,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     3,
+     3
+    ],
+    [
+     1,
+     3,
+     1,
+     0
+    ],
+    [
+     0,
+     2,
+     1,
+     3
+    ],
+    [
+     1,
+     0,
+     3,
+     3
+    ],
+    [
+     2,
+     0,
+     3,
+     1
+    ],
+    [
+     3,
+     0,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     3,
+     1
+    ],
+    [
+     0,
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     0,
+     3
+    ],
+    [
+     2,
+     2,
+     3,
+     0
+    ],
+    [
+     0,
+     3,
+     2,
+     2
+    ],
+    [
+     1,
+     0,
+     1,
+     3
+    ],
+    [
+     1,
+     2,
+     0,
+     2
+    ],
+    [
+     3,
+     1,
+     0,
+     1
+    ],
+    [
+     2,
+     1,
+     2,
+     0
+    ],
+    [
+     2,
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     2,
+     1,
+     2
+    ],
+    [
+     0,
+     0,
+     3,
+     1
+    ],
+    [
+     1,
+     3,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     1,
+     0
+    ],
+    [
+     2,
+     2,
+     0,
+     1
+    ],
+    [
+     3,
+     2,
+     2,
+     1
+    ],
+    [
+     3,
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     3
+    ],
+    [
+     0,
+     1,
+     2,
+     2
+    ],
+    [
+     1,
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     1,
+     2
+    ],
+    [
+     2,
+     1,
+     3,
+     2
+    ],
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     0,
+     1
+    ],
+    [
+     0,
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     0,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3,
+     0
+    ],
+    [
+     3,
+     2,
+     0,
+     3
+    ],
+    [
+     2,
+     0,
+     0,
+     2
+    ],
+    [
+     1,
+     0,
+     3,
+     0
+    ],
+    [
+     2,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     2,
+     2,
+     0
+    ],
+    [
+     0,
+     3,
+     0,
+     1
+    ],
+    [
+     3,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     3
+    ],
+    [
+     0,
+     0,
+     2,
+     0
+    ],
+    [
+     2,
+     3,
+     0,
+     0
+    ],
+    [
+     3,
+     2,
+     0,
+     0
+    ],
+    [
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     2,
+     1,
+     1,
+     2
+    ],
+    [
+     0,
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     0,
+     2,
+     3
+    ],
+    [
+     1,
+     2,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     3,
+     2
+    ],
+    [
+     1,
+     2,
+     2,
+     1
+    ],
+    [
+     0,
+     0,
+     2,
+     1
+    ],
+    [
+     2,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     2
+    ],
+    [
+     3,
+     0,
+     2,
+     0
+    ],
+    [
+     3,
+     1,
+     1,
+     2
+    ],
+    [
+     0,
+     3,
+     0,
+     2
+    ],
+    [
+     2,
+     1,
+     1,
+     3
+    ],
+    [
+     1,
+     0,
+     2,
+     0
+    ],
+    [
+     1,
+     3,
+     2,
+     1
+    ],
+    [
+     1,
+     2,
+     3,
+     1
+    ],
+    [
+     2,
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     2,
+     0,
+     3
+    ],
+    [
+     0,
+     2,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     2
+    ],
+    [
+     3,
+     1,
+     1,
+     0
+    ],
+    [
+     2,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     1,
+     3
+    ],
+    [
+     1,
+     3,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     3,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     2,
+     1,
+     3,
+     0
+    ],
+    [
+     3,
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     3,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0,
+     3
+    ],
+    [
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     2,
+     3
+    ],
+    [
+     1,
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     1,
+     1,
+     2
+    ],
+    [
+     1,
+     2,
+     0,
+     1
+    ],
+    [
+     3,
+     2,
+     0,
+     1
+    ],
+    [
+     2,
+     3,
+     1,
+     0
+    ],
+    [
+     0,
+     1,
+     3,
+     2
+    ],
+    [
+     2,
+     1,
+     1,
+     0
+    ],
+    [
+     3,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     3,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     3
+    ],
+    [
+     2,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     2,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     1,
+     2,
+     0
+    ],
+    [
+     3,
+     0,
+     0,
+     3
+    ],
+    [
+     0,
+     3,
+     3,
+     0
+    ],
+    [
+     2,
+     0,
+     0,
+     3
+    ],
+    [
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     1
+    ],
+    [
+     3,
+     0,
+     0,
+     2
+    ],
+    [
+     0,
+     3,
+     2,
+     0
+    ],
+    [
+     0,
+     2,
+     3,
+     0
+    ],
+    [
+     3,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     3,
+     0
+    ],
+    [
+     0,
+     3,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     3
+    ]
+   ]
+  }
+ }
+}
